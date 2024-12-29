@@ -26,7 +26,7 @@ export default function Layout(){
         <nav className="w-[100vw]">
             <div className="flex px-8 py-6 justify-between items-center w-[93vw] ">
                 <div className="flex items-center">
-                    <img className="w-[80px]" src="src/assets/log.png" alt="logo" />
+                    <img className="w-[80px]" src="public/images/log.png" alt="logo" />
                     <PiNotebookThin size={20} className="ml-4" />
                 </div>
                 <div className="flex justify-between items-center w-32">
