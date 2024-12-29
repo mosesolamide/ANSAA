@@ -40,7 +40,7 @@ export default function Layout(){
             <div className="md:hidden" onClick={hide}><MdOutlineViewHeadline size={30}/></div>
             <div className={`${hideSideBar? "hidden" : ""} bg-blue-950 w-[250px] h-[100vh] fixed pl-10 pt-16 text-white`}>
                 <ul className="flex flex-col gap-10">
-                    <li className="flex gap-4 items-center hover:cursor-pointer"> <MdGridView size={30}/> Overview</li>
+                    <li className="flex gap-4 items-center hover:cursor-pointer"> <MdGridView size={30}/> Ovesrview</li>
                     <li className="flex gap-4 items-center hover:cursor-pointer"> <MdGridView size={30}/>Permissions</li>
                     <li className="flex gap-4 items-center hover:cursor-pointer"><RiBrush4Line size={30} />Signage Application</li>
                 </ul>
