@@ -66,7 +66,7 @@ const hideSignAge = () =>{
                 </div>
             </div>
             <div className="md:hidden" onClick={hide}><MdOutlineViewHeadline size={30}/></div>
-            <div className={`${hideSideBar? "hidden" : ""} bg-blue-950 w-[250px] h-[100vh] fixed pl-3 pt-16 text-white`}>
+            <div className={`${hideSideBar? "hidden" : ""} bg-blue-950 w-[250px] h-[100vh] fixed pl-3 pt-8 text-white`}>
                 <ul className="">
                     <li className="flex gap-4 items-center hover:cursor-pointer hover:bg-red-600 h-16 w-52 pl-4"> <MdGridView size={30}/> Overview</li>
                     <li className="flex gap-4 items-center hover:cursor-pointer hover:bg-red-600 h-16 w-52 pl-4"> <MdGridView size={30}/>Permissions</li>
