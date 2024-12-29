@@ -12,7 +12,8 @@
  
         const [hideSideBar, setHideSideBar] = useState(
           JSON.parse(localStorage.getItem("sidebar")) || false
-        );
+        )
+        const [ HideSignAge , setHideSignAge ] = useState(true)
       
         // flip the state
         const hide = () => {
@@ -45,6 +46,10 @@
 
         }, [])
 
+const hideSignAge = () =>{
+    setHideSignAge(prev => !prev)
+}
+
     return(
         <nav className="w-[100vw]">
             <div className="flex px-8 py-6 justify-between items-center w-[93vw] ">
@@ -61,11 +66,25 @@
                 </div>
             </div>
             <div className="md:hidden" onClick={hide}><MdOutlineViewHeadline size={30}/></div>
-            <div className={`${hideSideBar? "hidden" : ""} bg-blue-950 w-[250px] h-[100vh] fixed pl-10 pt-16 text-white`}>
-                <ul className="flex flex-col gap-10">
-                    <li className="flex gap-4 items-center hover:cursor-pointer"> <MdGridView size={30}/> Overview</li>
-                    <li className="flex gap-4 items-center hover:cursor-pointer"> <MdGridView size={30}/>Permissions</li>
-                    <li className="flex gap-4 items-center hover:cursor-pointer"><RiBrush4Line size={30} />Signage Application</li>
+            <div className={`${hideSideBar? "hidden" : ""} bg-blue-950 w-[250px] h-[100vh] fixed pl-3 pt-16 text-white`}>
+                <ul className="">
+                    <li className="flex gap-4 items-center hover:cursor-pointer hover:bg-red-600 h-16 w-52 pl-4"> <MdGridView size={30}/> Overview</li>
+                    <li className="flex gap-4 items-center hover:cursor-pointer hover:bg-red-600 h-16 w-52 pl-4"> <MdGridView size={30}/>Permissions</li>
+                    <li 
+                        onClick={hideSignAge} 
+                        className={`${!HideSignAge ? "bg-red-600" : "hover:bg-red-600"}
+                         flex gap-4 items-center hover:cursor-pointer h-16 w-52 pl-4`}
+                    >
+                        <RiBrush4Line size={30} />
+                        Signage Application
+                    </li>
+                </ul>
+                <ul className={`${HideSignAge? "hidden" : ""} mt-4 text-[12px] font-bold ml-6`}>
+                    <li className="hover:cursor-pointer hover:bg-red-600  w-52 p-4">Register 1st Party Signage</li>
+                    <li className="hover:cursor-pointer hover:bg-red-600  w-52 p-4">Register 3rd Party Structure</li>
+                    <li className="hover:cursor-pointer hover:bg-red-600  w-52 p-4">Mobile Advertisement</li>
+                    <li className="hover:cursor-pointer hover:bg-red-600  w-52 p-4">Street Lamp-Pole Signage</li>
+                    <li className="hover:cursor-pointer hover:bg-red-600  w-52 p-4">Promotional Activities</li>
                 </ul>
             </div>
         </nav>
