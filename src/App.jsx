@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./promotional/Layout"
-import PromotionalActivities from "./promotional/promotionalActivities"
+import PromotionalActivities from "./promotional/PromotionalActivities"
 
 export default function App(){
   return (
