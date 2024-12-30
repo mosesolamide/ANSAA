@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./promotional/Layout"
+import PromotionalActivities from "./promotional/promotionalActivities"
 
 export default function App(){
   return (
@@ -12,7 +13,7 @@ export default function App(){
     >
       <Routes>
           <Route path="/" element={<Layout />}> 
-          
+              <Route path="promotionalActivities" element={<PromotionalActivities />} />
           </Route>
       </Routes>
     </BrowserRouter>
