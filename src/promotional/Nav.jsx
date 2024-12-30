@@ -78,7 +78,7 @@ const hideSignAge = () =>{
                             flex gap-4 items-center hover:cursor-pointer h-16 w-52 pl-4`}
                         >
                             <RiBrush4Line size={30} />
-                            Signage Application
+                            SignAge Application
                         </li>
                     </ul>
                     <ul className={`${HideSignAge? "hidden" : ""} mt-6 text-[12px] font-bold ml-6 flex flex-col gap-6`}>
