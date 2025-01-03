@@ -7,7 +7,8 @@ module.exports = {
       },
       colors: {
         bgColor: "#DAE0E9",
-        buttonColor: "#080239"
+        buttonColor: "#080239",
+        modal:"#EDF1F7"
       },
       screens: {
         'smallLg': '800px',
