@@ -30,29 +30,29 @@ const handleChange = (e) => {
 }
 
 const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     // Step 1: Retrieve existing activities from localStorage
-    let existingActivities = JSON.parse(localStorage.getItem("activities"));
+    let existingActivities = JSON.parse(localStorage.getItem("activities"))
 
     // Step 2: If there's no data or it's not an array, initialize it as an empty array
     if (!existingActivities) {
-        existingActivities = []; // Initialize as an empty array if not found
+        existingActivities = []// Initialize as an empty array if not found
     }
 
     // Step 3: Add the new activity to the existing array
-    existingActivities.push(activitiesForm);
+    existingActivities.push(activitiesForm)
 
     // Step 4: Save the updated array back to localStorage
-    localStorage.setItem("activities", JSON.stringify(existingActivities));
+    localStorage.setItem("activities", JSON.stringify(existingActivities))
 
     // Step 5: Close the modal
-    closeModal();
+    closeModal()
 }
 
     return (
         <div className="bg-[#080239]/80 fixed inset-0 w-full h-full grid place-items-center z-[1000] backdrop-blur-[1px]">
-            <form className="bg-white shadow-lg w-[440px] sm:w-[560px] h-[80%] rounded-sm" onSubmit={handleSubmit}>
+            <form className="bg-white shadow-lg w-[310px] sm:w-[560px] h-[550px] rounded-sm" onSubmit={handleSubmit}>
                 <div className="flex justify-between items-center bg-modal w-full px-6 pt-5 pb-3">
                     <h1 className="font-semibold">Promotional Activities Application</h1>
                     <MdCancel className="text-red-600" onClick={closeModal}/>
@@ -63,7 +63,7 @@ const handleSubmit = (e) => {
                         <select
                             name="applicationType" 
                             id="" 
-                            className="w-[130px] sm:w-[170px] text-gray-600 h-[45px] border p-2 rounded outline-none"
+                            className="w-[95px] sm:w-[170px] text-gray-600 h-[45px] border p-2 rounded outline-none"
                             onChange={handleChange}
                             value={activitiesForm.applicationType}
                             required
@@ -79,7 +79,7 @@ const handleSubmit = (e) => {
                         <select 
                             name="adsType" 
                             id="" 
-                            className="w-[130px] sm:w-[170px] h-[45px] border text-gray-600 p-2 rounded outline-none"
+                            className="w-[95px]  sm:w-[170px] h-[45px] border text-gray-600 p-2 rounded outline-none"
                             onChange={handleChange}
                             required
                             value={activitiesForm.adsType}
@@ -95,7 +95,7 @@ const handleSubmit = (e) => {
                         <select 
                             name="period" 
                             id="" 
-                            className="w-[130px] sm:w-[170px] h-[45px] text-gray-600
+                            className="w-[95px]  sm:w-[170px] h-[45px] text-gray-600
                             border p-2 rounded outline-none"
                             onChange={handleChange}
                             required
@@ -112,7 +112,7 @@ const handleSubmit = (e) => {
                         <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Start Date</label>
                         <input
                             type="date" 
-                            className="w-[130px] sm:w-[170px] h-[45px] border p-2
+                            className="w-[95px] sm:w-[170px] h-[45px] border p-2
                             text-gray-600 rounded outline-none"
                             required
                             value={activitiesForm.startDate}
@@ -124,7 +124,7 @@ const handleSubmit = (e) => {
                         <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">End Date</label>
                         <input
                             type="date" 
-                            className="w-[130px] sm:w-[170px] h-[45px] border p-2
+                            className="w-[95px] sm:w-[170px] h-[45px] border p-2
                             text-gray-600 rounded outline-none" 
                             required
                             name="endDate"
@@ -137,7 +137,7 @@ const handleSubmit = (e) => {
                         <input
                             type="text" 
                             placeholder="Enter No of Vehicle" 
-                            className="w-[130px] sm:w-[170px] h-[45px] border 
+                            className="w-[95px] sm:w-[170px] h-[45px] border 
                             p-2 text-gray-600 rounded outline-none" 
                             name="noVehicle"
                             required
@@ -152,7 +152,7 @@ const handleSubmit = (e) => {
                         <select 
                             name="lga" 
                             id="" 
-                            className="w-[130px] sm:w-[170px] h-[45px]
+                            className="w-[95px] sm:w-[170px] h-[45px]
                             text-gray-600 border p-2 rounded outline-none"
                             required
                             value={activitiesForm.lga}
@@ -176,7 +176,7 @@ const handleSubmit = (e) => {
                         <input 
                             type="text" 
                             placeholder="Onitsha" 
-                            className="w-[130px] sm:w-[170px] 
+                            className="w-[95px] sm:w-[170px] 
                             h-[45px] border p-2 text-gray-600 rounded outline-none"
                             required
                             value={activitiesForm.area}
@@ -189,7 +189,7 @@ const handleSubmit = (e) => {
                         <input 
                             type="text" 
                             placeholder="Enter Address" 
-                            className="w-[130px] sm:w-[170px] h-[45px] border p-2 text-gray-600 rounded outline-none" 
+                            className="w-[95px] sm:w-[170px] h-[45px] border p-2 text-gray-600 rounded outline-none" 
                             required
                             name="address"
                             value={activitiesForm.address}
