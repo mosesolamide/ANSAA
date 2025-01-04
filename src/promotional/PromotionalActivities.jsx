@@ -17,13 +17,13 @@ useEffect(() => {
   setActivities(storedActivities)
 }, [showModal])
 
-const allActivities = activities.map((activity,index) =>{
+const allActivities = activities.length > 0 ? activities.map((activity,index) =>{
     return(
         <div key={index}>
             <ul className="flex justify-between items-center w-full text-[.4em]
              font-sm bg-modal text-bold px-1 py-2 sm:text-[.8em] mt-4 sm:"
              >
-                <li>1</li>
+                <li>{index + 1}</li>
                 <li>{activity.applicationType}</li>
                 <li>{activity.adsType}</li>
                 <li>{activity.period}</li>
@@ -35,13 +35,29 @@ const allActivities = activities.map((activity,index) =>{
             </ul>
         </div>
     )
-})
+}) : (
+    <div className="flex flex-col items-center mt-24">
+        <img src="/public/images/TRUCK.png" alt="truck" className="w-48"/>
+        <p className="text-buttonColor font-semibold py-9 text-[.6em] sm:text-[.7em] md:text-[.8em]">You don’t have any Promotional Activities. Click on add new activities to create one</p>
+        <button 
+            onClick={addActivitiesModal} 
+            className="w-[203px] h-[45px] bg-buttonColor
+            text-white rounded-[3px] flex justify-center items-center"
+        >
+        <IoIosAddCircle size={20} className="mr-2" />Add New Activities</button>
+    </div>
+)
     return(
         <section className=" w-[100vw] sm:w-[100vw] md:w-[70vw] lg:w-[82vw] largeLg:w-[78vw] xl:w-[82vw] ml-auto">
           <section className="py-3 px-6 w-full">
                 <div className="flex justify-between items-center">
                     <h1 className="text-buttonColor text-[1em] font-bold">Promotional Activities</h1>
-                    <button onClick={addActivitiesModal} className="w-[203px] h-[45px] bg-buttonColor text-white rounded-[3px] flex justify-center items-center"><IoIosAddCircle size={20} className="mr-2" />Add New Activities</button>
+                    <button 
+                        onClick={addActivitiesModal} 
+                        className="w-[203px] h-[45px] bg-buttonColor
+                        text-white rounded-[3px] flex justify-center items-center"
+                     >
+                    <IoIosAddCircle size={20} className="mr-2" />Add New Activities</button>
                 </div>
                 <section className="bg-white mt-4 h-[475px] p-2">
                     <div>
