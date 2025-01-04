@@ -37,7 +37,7 @@ const allActivities = activities.length > 0 ? activities.map((activity,index) =>
     )
 }) : (
     <div className="flex flex-col items-center mt-24">
-        <img src="/public/images/TRUCK.png" alt="truck" className="w-48"/>
+        <img src="images/TRUCK.png" alt="truck" className="w-48"/>
         <p className="text-buttonColor font-semibold py-9 text-[.6em] sm:text-[.7em] md:text-[.8em]">You don’t have any Promotional Activities. Click on add new activities to create one</p>
         <button 
             onClick={addActivitiesModal} 
