@@ -52,7 +52,7 @@ const handleSubmit = (e) => {
 
     return (
         <div className="bg-[#080239]/80 fixed inset-0 w-full h-full grid place-items-center z-[1000] backdrop-blur-[1px]">
-            <form className="bg-white shadow-lg w-[89%] sm:w-[80%] md:w-[69%] lg:w-[52%] h-[80%] rounded-sm" onSubmit={handleSubmit}>
+            <form className="bg-white shadow-lg w-[440px] sm:w-[560px] h-[80%] rounded-sm" onSubmit={handleSubmit}>
                 <div className="flex justify-between items-center bg-modal w-full px-6 pt-5 pb-3">
                     <h1 className="font-semibold">Promotional Activities Application</h1>
                     <MdCancel className="text-red-600" onClick={closeModal}/>

@@ -20,7 +20,9 @@ useEffect(() => {
 const allActivities = activities.map((activity,index) =>{
     return(
         <div key={index}>
-            <ul className="flex justify-around w-full text-[.4em] font-sm bg-modal text-black p-3 sm:text-[.8em] mt-4">
+            <ul className="flex justify-between items-center w-full text-[.4em]
+             font-sm bg-modal text-bold px-1 py-2 sm:text-[.8em] mt-4 sm:"
+             >
                 <li>1</li>
                 <li>{activity.applicationType}</li>
                 <li>{activity.adsType}</li>
@@ -28,8 +30,8 @@ const allActivities = activities.map((activity,index) =>{
                 <li>{activity.startDate}</li>
                 <li>{activity.endDate}</li>
                 <li>{activity.noVehicle}</li>
-                <li>pending</li>
-                <li><button>Action</button></li>
+                <li className="bg-gray-100 py-1 px-2 rounded-lg">pending</li>
+                <li><button className="bg-green-700 px-3 py-1 rounded-sm text-white">Action</button></li>
             </ul>
         </div>
     )
@@ -43,7 +45,7 @@ const allActivities = activities.map((activity,index) =>{
                 </div>
                 <section className="bg-white mt-4 h-[475px] p-2">
                     <div>
-                        <ul className="flex justify-around w-full text-[.4em] gap-1 font-bold bg-buttonColor text-white p-2 sm:text-[.8em]">
+                        <ul className="flex justify-between w-full text-[.4em] font-bold bg-buttonColor text-white p-2 sm:text-[.8em]">
                             <li>S/N</li>
                             <li>Application Type</li>
                             <li>Ads Type</li>
