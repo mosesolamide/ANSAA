@@ -59,11 +59,11 @@ const handleSubmit = (e) => {
                 </div>
                 <div className="flex justify-center gap-2 mt-2">
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Application Type</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Application Type</label>
                         <select
                             name="applicationType" 
                             id="" 
-                            className="w-[95px] sm:w-[170px] text-gray-600 h-[45px] border p-2 rounded outline-none"
+                            className="w-[95px] sm:w-[170px] text-gray-600 h-[45px] border p-2 rounded outline-none text-sm"
                             onChange={handleChange}
                             value={activitiesForm.applicationType}
                             required
@@ -75,11 +75,11 @@ const handleSubmit = (e) => {
                         </select>
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Ads Type</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Ads Type</label>
                         <select 
                             name="adsType" 
                             id="" 
-                            className="w-[95px]  sm:w-[170px] h-[45px] border text-gray-600 p-2 rounded outline-none"
+                            className="w-[95px]  sm:w-[170px] h-[45px] border text-gray-600 p-2 rounded outline-none text-[12px] sm:text-[14px]"
                             onChange={handleChange}
                             required
                             value={activitiesForm.adsType}
@@ -91,12 +91,12 @@ const handleSubmit = (e) => {
                         </select>
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Period</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Period</label>
                         <select 
                             name="period" 
                             id="" 
                             className="w-[95px]  sm:w-[170px] h-[45px] text-gray-600
-                            border p-2 rounded outline-none"
+                            border p-2 rounded outline-none text-[12px] sm:text-[14px]"
                             onChange={handleChange}
                             required
                             value={activitiesForm.period}
@@ -109,11 +109,11 @@ const handleSubmit = (e) => {
                 </div>
                 <div className="flex justify-center gap-2">
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Start Date</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Start Date</label>
                         <input
                             type="date" 
                             className="w-[95px] sm:w-[170px] h-[45px] border p-2
-                            text-gray-600 rounded outline-none"
+                            text-gray-600 rounded outline-none text-[12px] sm:text-[14px]"
                             required
                             value={activitiesForm.startDate}
                             name="startDate"
@@ -121,11 +121,11 @@ const handleSubmit = (e) => {
                            />
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">End Date</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">End Date</label>
                         <input
                             type="date" 
                             className="w-[95px] sm:w-[170px] h-[45px] border p-2
-                            text-gray-600 rounded outline-none" 
+                            text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" 
                             required
                             name="endDate"
                             onChange={handleChange}
@@ -133,12 +133,12 @@ const handleSubmit = (e) => {
                           />
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">No of Vehicle</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">No of Vehicle</label>
                         <input
                             type="text" 
                             placeholder="Enter No of Vehicle" 
                             className="w-[95px] sm:w-[170px] h-[45px] border 
-                            p-2 text-gray-600 rounded outline-none" 
+                            p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" 
                             name="noVehicle"
                             required
                             onChange={handleChange}
@@ -148,12 +148,12 @@ const handleSubmit = (e) => {
                 </div>
                 <div className="flex justify-center gap-2">
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">LGA</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">LGA</label>
                         <select 
                             name="lga" 
                             id="" 
                             className="w-[95px] sm:w-[170px] h-[45px]
-                            text-gray-600 border p-2 rounded outline-none"
+                            text-gray-600 border p-2 rounded outline-none text-[12px] sm:text-[14px]"
                             required
                             value={activitiesForm.lga}
                             onChange={handleChange}
@@ -172,12 +172,12 @@ const handleSubmit = (e) => {
                         </select>
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Area</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Area</label>
                         <input 
                             type="text" 
                             placeholder="Onitsha" 
                             className="w-[95px] sm:w-[170px] 
-                            h-[45px] border p-2 text-gray-600 rounded outline-none"
+                            h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]"
                             required
                             value={activitiesForm.area}
                             onChange={handleChange}
@@ -185,11 +185,11 @@ const handleSubmit = (e) => {
                          />
                     </div>
                     <div className="relative mt-4">
-                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Street Address</label>
+                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Street Address</label>
                         <input 
                             type="text" 
                             placeholder="Enter Address" 
-                            className="w-[95px] sm:w-[170px] h-[45px] border p-2 text-gray-600 rounded outline-none" 
+                            className="w-[95px] sm:w-[170px] h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" 
                             required
                             name="address"
                             value={activitiesForm.address}
@@ -202,20 +202,20 @@ const handleSubmit = (e) => {
                             <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Contact info</label>
                                 <div className="grid grid-cols-2 gap-2 place-items-center">
                                     <div className="relative mt-4">
-                                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Name</label>
-                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none" />
+                                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Name</label>
+                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" />
                                     </div>
                                     <div className="relative mt-4">
-                                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Email</label>
-                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none" />
+                                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Email</label>
+                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" />
                                     </div>
                                     <div className="relative mt-2">
-                                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Phone Number</label>
-                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none" />
+                                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Phone Number</label>
+                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" />
                                     </div>
                                     <div className="relative mt-2">
-                                        <label className="absolute -top-3 left-2 bg-white px-1 text-sm text-gray-600">Address</label>
-                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none" />
+                                        <label className="absolute -top-2 left-2 bg-white px-1 text-[10px] sm:text-[14px] text-gray-600">Address</label>
+                                        <input type="text" placeholder="Enter Address" className="w-full h-[45px] border p-2 text-gray-600 rounded outline-none text-[12px] sm:text-[14px]" />
                                     </div>
                                 </div>
                         </div>
