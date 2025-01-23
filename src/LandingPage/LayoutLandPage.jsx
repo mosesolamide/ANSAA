@@ -1,14 +1,14 @@
 import React from "react"
-import Nav from "./Nav"
+import LandHeader from "./LandHeader"
 import { Outlet } from "react-router-dom"
 
-export default function Layout(){
+export default function LayoutLandPage (){
     return(
         <>
-            <Nav />
+            <LandHeader />
             <main>
                 <Outlet />
             </main>
-        </> 
+        </>
     )
 }

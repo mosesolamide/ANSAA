@@ -35,18 +35,18 @@ const handleSubmit = (e) => {
     // Step 1: Retrieve existing activities from localStorage
     let existingActivities = JSON.parse(localStorage.getItem("activities"))
 
-    // Step 2: If there's no data or it's not an array, initialize it as an empty array
+    //If there's no data or it's not an array, initialize it as an empty array
     if (!existingActivities) {
-        existingActivities = []// Initialize as an empty array if not found
+        existingActivities = []// Initialize as an empty array if it is not found
     }
 
-    // Step 3: Add the new activity to the existing array
+    //Add the new activity to the existing array
     existingActivities.push(activitiesForm)
 
-    // Step 4: Save the updated array back to localStorage
+    //Save the updated array back to localStorage
     localStorage.setItem("activities", JSON.stringify(existingActivities))
 
-    // Step 5: Close the modal
+    //Close the modal
     closeModal()
 }
 
@@ -55,7 +55,7 @@ const handleSubmit = (e) => {
             <form className="bg-white shadow-lg w-[310px] sm:w-[560px] h-[550px] rounded-sm" onSubmit={handleSubmit}>
                 <div className="flex justify-between items-center bg-modal w-full px-6 pt-5 pb-3">
                     <h1 className="font-semibold">Promotional Activities Application</h1>
-                    <MdCancel className="text-red-600" onClick={closeModal}/>
+                    <MdCancel className="text-red-600 hover:cursor-pointer" onClick={closeModal}/>
                 </div>
                 <div className="flex justify-center gap-2 mt-2">
                     <div className="relative mt-4">

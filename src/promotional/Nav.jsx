@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { MdLogout } from "react-icons/md";
 import { PiNotebookThin } from "react-icons/pi";
 import { IoPersonCircleOutline } from "react-icons/io5";
@@ -7,14 +7,14 @@ import { RiBrush4Line } from "react-icons/ri";
 import { MdGridView } from "react-icons/md";
 import { MdOutlineViewHeadline } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { Mycontext } from "../App";
+
       
 export default function Nav() {
- 
-  const [hideSideBar, setHideSideBar] = useState(
-          JSON.parse(localStorage.getItem("sidebar")) || false
-        )
 
-  const [ HideSignAge,setHideSignAge ] = useState(true)
+const {hideSideBar, setHideSideBar} = useContext(Mycontext)
+
+  const [HideSignAge,setHideSignAge] = useState(true)
       
         // flip the state
   const hide = () => {
@@ -25,27 +25,7 @@ export default function Nav() {
         useEffect(() => {
           localStorage.setItem("sidebar", hideSideBar);
         }, [hideSideBar]);
-      
-        // Update the sidebar visibility based on window size
-        useEffect(() => {
-          const handleResize = () => {
-            if (window.innerWidth >= 768) {
-              setHideSideBar(false)
-              localStorage.setItem("sidebar", true)
-            } else {
-              setHideSideBar(true);
-              localStorage.setItem("sidebar", false)
-            }
-          }
 
-          window.addEventListener("resize", handleResize)
-          handleResize()
-
-          return () => {
-            window.removeEventListener("resize", handleResize);
-          }
-
-        }, [])
 
 const hideSignAge = () =>{
     setHideSignAge(prev => !prev)
