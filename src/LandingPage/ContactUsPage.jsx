@@ -26,13 +26,13 @@ export default function ContactUsPage(){
                         </div>
                     </div>
 
-                    <div>
+                    <div className='w-[300px]'>
                         <h1 className='font-[900] text-2xl'><span className='border-b-2 border-red-700'>Contact</span> Us</h1>
                         <p className='text-sm my-4'>Reach out to us for any enquires</p>
                         <form className='flex flex-col gap-2'>
                             <input type="text" placeholder='Name' className='h-[45px] indent-5' />
                             <input type="text" placeholder='Your email'  className='h-[45px] indent-5'/>
-                            <textarea name="" id="" placeholder='Message' className='w-[350px] h-[200px] p-4 border border-gray-300 rounded-md resize-none'>
+                            <textarea name="" id="" placeholder='Message' className='w-[300px] h-[200px] p-4 border border-gray-300 rounded-md resize-none'>
                             </textarea>
                             <button className='bg-gold text-white py-2 rounded-sm'>Submit</button>
                         </form>
@@ -41,7 +41,7 @@ export default function ContactUsPage(){
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31704.918153982657!2d3.3368500474709575!3d6.632665603952906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ea60971ee3%3A0xd335301146fdc207!2sOjodu%2C%20Lagos!5e0!3m2!1sen!2sng!4v1737740280815!5m2!1sen!2sng"
-                    width="350"
+                    width="300"
                     height="350"
                     style={{ border: '0' }}
                     allowFullScreen
