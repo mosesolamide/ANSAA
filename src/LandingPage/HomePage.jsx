@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactUsPage from './ContactUsPage'
 
 export default function HomePage(){
     return(
@@ -39,6 +40,40 @@ export default function HomePage(){
             <div>
                 <img src="images/reg.png" alt="registration process" className='w-full h-[300px] sm:h-[400px]' />
             </div>
+
+            <div className='flex flex-wrap justify-center gap-6 bg-white py-8 px-3 text-[#080239] md:justify-evenly items-center '>
+                <img src="images/Mask group.png" alt="group" className='w-[300px] h-[300px] md:w-[400px] md:h-[500px]' />
+                <div>
+                    <h4 className='font-bold text-[15px] md:text-[25px] md:font-black'>Functions of The Agency</h4>
+                    <ul className='text-[12px] md:text-[17px] w-[250px] md:w-[400px] list-disc flex flex-col gap-2'>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Control outdoor structure to be used for signage and advertisement
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Control the number, size, and location of outdoor structures
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Protect the environment from potential adverse impact from visual blights
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Issue license and permit for the construction and placement of outdoor structures in any part of the state
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Control the pasting and display of posters on public structures and highways
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-500 text-xl mr-3">✔️</span>
+                            Reject, revoke or modify a permit if found to be in violation of any of the provisions of this Law or the conditions for its grant
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ContactUsPage />
         </>
     )
 }
