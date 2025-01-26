@@ -12,13 +12,13 @@ import { Mycontext } from "../App";
       
 export default function Nav() {
 
-const {hideSideBar, setHideSideBar} = useContext(Mycontext)
+  const {hideSideBar, setHideSideBar} = useContext(Mycontext)
 
   const [HideSignAge,setHideSignAge] = useState(true)
       
         // flip the state
   const hide = () => {
-          setHideSideBar((prev) => !prev);
+          setHideSideBar(prev => !prev)
         }
       
         // Update localStorage whenever the state changes

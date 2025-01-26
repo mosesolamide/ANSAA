@@ -9,7 +9,7 @@ import { MdForwardToInbox } from "react-icons/md"
 export default function ContactUsPage(){
     return(
         <>
-           <div className='flex justify-around items-center flex-wrap p-4'>
+           <div className='flex justify-around items-center flex-wrap p-4' id='contact'>
                 <div className='text-buttonColor py-5 flex items-center gap-3'>
 
                     <div class="flex flex-col items-center space-y-4 relative">

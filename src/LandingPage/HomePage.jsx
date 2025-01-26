@@ -2,6 +2,7 @@ import React from 'react'
 import ContactUsPage from './ContactUsPage'
 
 export default function HomePage(){
+
     return(
         <>
             <img src="images/SLIDER 3.png" alt="banner" className=' h-[250px] sm:h-[350px] md:h-[430px] relative'/>
@@ -11,7 +12,7 @@ export default function HomePage(){
                 <button className='bg-red-700 px-2 py-2 sm:px-4 sm:py-4 text-white text-[10px] sm:text-sm rounded-sm'>Apply for Signage Permit</button>
             </div>
 
-            <div className='flex flex-wrap justify-center gap-6 py-8 px-3 md:justify-evenly items-center'>
+            <div className='flex flex-wrap justify-center gap-6 py-8 px-3 md:justify-evenly items-center' id="about-us">
                 <img src="images/about image.png" alt="image of people in ansaa" className='w-[300px]' />
                 <div className='w-80 px-3'>
                    <h2 className='font-black text-2xl text-[#080239]'>About Us</h2> 
@@ -27,7 +28,7 @@ export default function HomePage(){
                 </div>
             </div>
 
-            <div className=' bg-white text-center py-8'>
+            <div className=' bg-white text-center py-8' id='service'>
                 <p className='uppercase text-red-700 font-bold text-sm'>what we do</p>
                 <h3 className='text-[#080239] font-bold text-xl'>Our Services</h3>
                 <div className='flex justify-center gap-4 mt-4 px-4'>
