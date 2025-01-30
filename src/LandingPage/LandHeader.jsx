@@ -1,10 +1,20 @@
 import React, { useContext } from 'react'
 import { Mycontext } from "../App"
 import { MdOutlineViewHeadline } from "react-icons/md"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function LandHeader() {
     const { hideSideBar, setHideSideBar } = useContext(Mycontext);
+
+    const navigate = useNavigate()
+
+    const goApply = () => {
+        navigate("/reg")
+    }
+
+    const goLogin = () => {
+        navigate("reg/login")
+    }
 
     const hide = () => {
         setHideSideBar((prev) => !prev);
@@ -68,10 +78,16 @@ export default function LandHeader() {
                     </ul>
                 </div>
                 <div className="flex text-sm gap-2">
-                    <button className="w-[65px] lg:w-[100px] bg-gold px-4 py-2 text-white">
+                    <button
+                        className="w-[65px] lg:w-[100px] bg-gold px-4 py-2 text-white"
+                        onClick={goApply}
+                     >
                         Apply
                     </button>
-                    <button className="w-[65px] lg:w-[100px] bg-red-700 px-4 py-2 text-white">
+                    <button 
+                    className="w-[65px] lg:w-[100px] bg-red-700 px-4 py-2 text-white"
+                    onClick={goLogin}
+                    >
                         Login
                     </button>
                 </div>

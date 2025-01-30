@@ -15,7 +15,7 @@ module.exports = {
         'smallLg': '800px',
         'largeLg': '1030px',
         'eight': '820px'
-      }
+      },
     },
   },
   plugins: [],

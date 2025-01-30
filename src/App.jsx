@@ -4,6 +4,9 @@ import Layout from "./promotional/Layout"
 import PromotionalActivities from "./promotional/PromotionalActivities"
 import LayoutLandPage from "./LandingPage/LayoutLandPage"
 import HomePage from "./LandingPage/HomePage"
+import RegLogLayout from "./LoginReg/RegLogLayout"
+import Register from "./LoginReg/Register"
+import Login from "./LoginReg/Login"
 
 export const Mycontext = createContext()
 
@@ -48,6 +51,10 @@ const [hideSideBar, setHideSideBar] = useState(
             {/* <Route path="/" element={<Layout />}> 
                 <Route path="promotionalActivities" element={<PromotionalActivities />} />
             </Route> */}
+            <Route path="/reg" element={<RegLogLayout />}>
+                <Route index element={<Register />} />
+                <Route path="login" element={<Login />} />
+            </Route>
         </Routes>
       </BrowserRouter>
     </Mycontext.Provider>
