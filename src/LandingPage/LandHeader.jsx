@@ -54,25 +54,25 @@ export default function LandHeader() {
                         absolute md:static ${hideSideBar ? 'hidden' : 'block'} 
                         bg-white md:bg-transparent rounded-md w-[115px] md:w-full left-0 top-full z-10`}
                     >
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link>Home</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link onClick={scrollToAboutUs}>About Us</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link onClick={scrollToService}>Service</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link>Our Business</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link onClick={scrollToContact}>Contact Us</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link>News</Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 hover:bg-gray-300">
                             <Link>ANSAA Offices</Link>
                         </li>
                     </ul>
